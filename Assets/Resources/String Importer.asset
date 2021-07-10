@@ -1,0 +1,2544 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af172cc5a9888b24b804c99dbe13d646, type: 3}
+  m_Name: String Importer
+  m_EditorClassIdentifier: 
+  firstList:
+  - My name is Ramon
+  - Buiu is a great cat
+  - Madalena is the new black
+  - Romeu is the new black
+  - Romu is the new black
+  - Romulo is the new black
+  - "Thayane gosta de ma\xE7a"
+  - "Thayane n\xE3oooasdas gosta de ma\xE7a"
+  - "A madalena \xE9 linda"
+  - "A madalena \xE9 gorda"
+  - "A madalena \xE9 gordas"
+  - "A madalna \xE9 gorda"
+  - "A julieta \xE9 gorda"
+  - "A madaleninha \xE9 bigoduda"
+  - "A madaleninha \xE9 dorminhoca"
+  - "O romeu \xE9 bola oito"
+  - "O romeu \xE9 chato"
+  - "A madalna \xE9 gordaaa"
+  - "O romeu n\xE3o \xE9 chato"
+  - "Thayane n\xE3oooasdas gosta de ma\xE7a"
+  - "A madalena \xE9 gordaa"
+  Config:
+    maxOneWord: 1
+    maxFewWords: 3
+    Min_SimpleDistance: 0
+    Max_SimpleDistance: 10
+    Min_SimpleDistanceForOneWord: 1
+    Max_SimpleDistanceForOneWord: 1
+    Min_SimpleDistanceForFewWord: 1
+    Max_SimpleDistanceForFewWord: 5
+    Min_SumDistance: 0
+    Max_SumDistance: 10
+    Min_AverageDistance: 0
+    Max_AverageDistance: 1
+    Min_MaxDistance: 6
+    Max_MaxDistance: 10
+    Min_MinDistance: 3
+    Max_MinDistance: 10
+    Min_AmountOfDifferences: 1
+    Max_AmountOfDifferences: 2
+    Min_DifferencePerComponent: 0
+    Max_DifferencePerComponent: 10
+  DuplicatesResult:
+    NotDuplicates:
+    - Origin: Buiu is a great cat
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 5
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Madalena is the new black
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Madalena is the new black
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 19
+        AverageDistance: 3.8
+        MaxDistance: 8
+        MinDistance: 0
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 0.8
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romeu is the new black
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romeu is the new black
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 0.8
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romeu is the new black
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 7
+        SumDistance: 7
+        AverageDistance: 1.4
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romu is the new black
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romu is the new black
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 14
+        AverageDistance: 2.8
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 0.8
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romu is the new black
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 1.6
+        MaxDistance: 8
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romulo is the new black
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romulo is the new black
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 16
+        AverageDistance: 3.2
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 0.8
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romulo is the new black
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 7
+        SumDistance: 7
+        AverageDistance: 1.4
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romulo is the new black
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 3
+        SumDistance: 3
+        AverageDistance: 0.6
+        MaxDistance: 3
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: Romulo is the new black
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 2
+        SumDistance: 2
+        AverageDistance: 0.4
+        MaxDistance: 2
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane gosta de ma\xE7a"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 24
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 8
+        MinDistance: 4
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 24
+        SumDistance: 27
+        AverageDistance: 5.4
+        MaxDistance: 9
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 23
+        SumDistance: 26
+        AverageDistance: 5.2
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 27
+        SumDistance: 27
+        AverageDistance: 5.4
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 27
+        SumDistance: 27
+        AverageDistance: 5.4
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 27
+        SumDistance: 27
+        AverageDistance: 5.4
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 11
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 8
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 linda"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 25
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 9
+        MinDistance: 4
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 8
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 24
+        AverageDistance: 6
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 23
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 9
+        MinDistance: 4
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gorda"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 3
+        SumDistance: 3
+        AverageDistance: 0.75
+        MaxDistance: 3
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 8
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 23
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 9
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordas"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 4
+        SumDistance: 4
+        AverageDistance: 1
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 24
+        SumDistance: 24
+        AverageDistance: 6
+        MaxDistance: 8
+        MinDistance: 4
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 4
+        SumDistance: 4
+        AverageDistance: 1
+        MaxDistance: 3
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gorda"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 2
+        SumDistance: 2
+        AverageDistance: 0.5
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 14
+        AverageDistance: 3.5
+        MaxDistance: 6
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 25
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 9
+        MinDistance: 4
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 9
+        SumDistance: 9
+        AverageDistance: 2.25
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 6
+        SumDistance: 6
+        AverageDistance: 1.5
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 7
+        SumDistance: 7
+        AverageDistance: 1.75
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A julieta \xE9 gorda"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 6
+        SumDistance: 6
+        AverageDistance: 1.5
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 10
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 29
+        AverageDistance: 7.25
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 27
+        AverageDistance: 6.75
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 10
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 24
+        SumDistance: 30
+        AverageDistance: 7.5
+        MaxDistance: 11
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 7
+        SumDistance: 7
+        AverageDistance: 1.75
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 bigoduda"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 12
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 8
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 24
+        AverageDistance: 6
+        MaxDistance: 10
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 30
+        AverageDistance: 7.5
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 22
+        SumDistance: 27
+        AverageDistance: 6.75
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 22
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 28
+        AverageDistance: 7
+        MaxDistance: 10
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 27
+        AverageDistance: 6.75
+        MaxDistance: 10
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 25
+        SumDistance: 32
+        AverageDistance: 8
+        MaxDistance: 11
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 10
+        SumDistance: 10
+        AverageDistance: 2.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 10
+        SumDistance: 10
+        AverageDistance: 2.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 11
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 8
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 11
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 8
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madaleninha \xE9 dorminhoca"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 9
+        SumDistance: 9
+        AverageDistance: 2.25
+        MaxDistance: 9
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 5
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 17
+        AverageDistance: 3.4
+        MaxDistance: 5
+        MinDistance: 1
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 21
+        SumDistance: 25
+        AverageDistance: 5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 22
+        AverageDistance: 4.4
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 21
+        AverageDistance: 4.2
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 23
+        AverageDistance: 4.6
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 26
+        SumDistance: 29
+        AverageDistance: 5.8
+        MaxDistance: 9
+        MinDistance: 4
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 10
+        AverageDistance: 2.5
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 10
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 bola oito"
+      Target: "A madaleninha \xE9 dorminhoca"
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 10
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 11
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 4
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 14
+        AverageDistance: 3.5
+        MaxDistance: 5
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 27
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 9
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 13
+        SumDistance: 13
+        AverageDistance: 3.25
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 13
+        SumDistance: 13
+        AverageDistance: 3.25
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 14
+        AverageDistance: 3.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 13
+        SumDistance: 13
+        AverageDistance: 3.25
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 12
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 19
+        AverageDistance: 4.75
+        MaxDistance: 10
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "A madaleninha \xE9 dorminhoca"
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 10
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu \xE9 chato"
+      Target: "O romeu \xE9 bola oito"
+      ConfigResult:
+        SimpleDistance: 6
+        SumDistance: 5
+        AverageDistance: 1.25
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 20
+        AverageDistance: 5
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 23
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 8
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 6
+        SumDistance: 6
+        AverageDistance: 1.5
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 3
+        SumDistance: 3
+        AverageDistance: 0.75
+        MaxDistance: 2
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 3
+        SumDistance: 3
+        AverageDistance: 0.75
+        MaxDistance: 2
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 2
+        SumDistance: 2
+        AverageDistance: 0.5
+        MaxDistance: 2
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 9
+        SumDistance: 9
+        AverageDistance: 2.25
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "A madaleninha \xE9 dorminhoca"
+      ConfigResult:
+        SimpleDistance: 11
+        SumDistance: 11
+        AverageDistance: 2.75
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "O romeu \xE9 bola oito"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 13
+        AverageDistance: 3.25
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalna \xE9 gordaaa"
+      Target: "O romeu \xE9 chato"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 14
+        AverageDistance: 3.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 13
+        AverageDistance: 3.25
+        MaxDistance: 5
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 19
+        AverageDistance: 3.8
+        MaxDistance: 5
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 23
+        AverageDistance: 4.6
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 20
+        AverageDistance: 4
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 19
+        AverageDistance: 3.8
+        MaxDistance: 5
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 21
+        AverageDistance: 4.2
+        MaxDistance: 6
+        MinDistance: 3
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 7
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 25
+        SumDistance: 27
+        AverageDistance: 5.4
+        MaxDistance: 9
+        MinDistance: 2
+        AmountOfDifferences: 5
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 15
+        AverageDistance: 3.75
+        MaxDistance: 6
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 10
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madaleninha \xE9 dorminhoca"
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 24
+        AverageDistance: 6
+        MaxDistance: 10
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "O romeu \xE9 bola oito"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 10
+        AverageDistance: 2
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.6
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "O romeu \xE9 chato"
+      ConfigResult:
+        SimpleDistance: 4
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "O romeu n\xE3o \xE9 chato"
+      Target: "A madalna \xE9 gordaaa"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 18
+        AverageDistance: 4.5
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: My name is Ramon
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 6
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: Buiu is a great cat
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 16
+        AverageDistance: 4
+        MaxDistance: 8
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: Madalena is the new black
+      ConfigResult:
+        SimpleDistance: 17
+        SumDistance: 25
+        AverageDistance: 6.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 19
+        SumDistance: 22
+        AverageDistance: 5.5
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: Romu is the new black
+      ConfigResult:
+        SimpleDistance: 18
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: Romulo is the new black
+      ConfigResult:
+        SimpleDistance: 20
+        SumDistance: 23
+        AverageDistance: 5.75
+        MaxDistance: 8
+        MinDistance: 3
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "Thayane gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 21
+        AverageDistance: 5.25
+        MaxDistance: 7
+        MinDistance: 2
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "Thayane n\xE3oooasdas gosta de ma\xE7a"
+      ConfigResult:
+        SimpleDistance: 22
+        SumDistance: 26
+        AverageDistance: 6.5
+        MaxDistance: 9
+        MinDistance: 5
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madalena \xE9 linda"
+      ConfigResult:
+        SimpleDistance: 4
+        SumDistance: 4
+        AverageDistance: 1
+        MaxDistance: 4
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madalna \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 2
+        SumDistance: 2
+        AverageDistance: 0.5
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A julieta \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 7
+        SumDistance: 7
+        AverageDistance: 1.75
+        MaxDistance: 6
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madaleninha \xE9 bigoduda"
+      ConfigResult:
+        SimpleDistance: 8
+        SumDistance: 8
+        AverageDistance: 2
+        MaxDistance: 5
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madaleninha \xE9 dorminhoca"
+      ConfigResult:
+        SimpleDistance: 10
+        SumDistance: 10
+        AverageDistance: 2.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "O romeu \xE9 bola oito"
+      ConfigResult:
+        SimpleDistance: 16
+        SumDistance: 12
+        AverageDistance: 3
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "O romeu \xE9 chato"
+      ConfigResult:
+        SimpleDistance: 14
+        SumDistance: 14
+        AverageDistance: 3.5
+        MaxDistance: 7
+        MinDistance: 0
+        AmountOfDifferences: 3
+        DifferencesPerComponents: 0.75
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madalna \xE9 gordaaa"
+      ConfigResult:
+        SimpleDistance: 2
+        SumDistance: 2
+        AverageDistance: 0.5
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 2
+        DifferencesPerComponents: 0.5
+      Results:
+        Result: 0
+        Reasons: []
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "O romeu n\xE3o \xE9 chato"
+      ConfigResult:
+        SimpleDistance: 15
+        SumDistance: 17
+        AverageDistance: 4.25
+        MaxDistance: 7
+        MinDistance: 1
+        AmountOfDifferences: 4
+        DifferencesPerComponents: 1
+      Results:
+        Result: 0
+        Reasons: []
+    PossibleDuplicates:
+    - Origin: Romu is the new black
+      Target: Romeu is the new black
+      ConfigResult:
+        SimpleDistance: 1
+        SumDistance: 1
+        AverageDistance: 0.2
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.2
+      Results:
+        Result: 1
+        Reasons:
+        - One word with differences
+    - Origin: "A madalena \xE9 gordas"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 1
+        SumDistance: 1
+        AverageDistance: 0.25
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 1
+        Reasons:
+        - One word with differences
+    - Origin: "A madalna \xE9 gorda"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 1
+        SumDistance: 1
+        AverageDistance: 0.25
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 1
+        Reasons:
+        - One word with differences
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madalena \xE9 gorda"
+      ConfigResult:
+        SimpleDistance: 1
+        SumDistance: 1
+        AverageDistance: 0.25
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 1
+        Reasons:
+        - One word with differences
+    - Origin: "A madalena \xE9 gordaa"
+      Target: "A madalena \xE9 gordas"
+      ConfigResult:
+        SimpleDistance: 1
+        SumDistance: 1
+        AverageDistance: 0.25
+        MaxDistance: 1
+        MinDistance: 0
+        AmountOfDifferences: 1
+        DifferencesPerComponents: 0.25
+      Results:
+        Result: 1
+        Reasons:
+        - One word with differences
+  DuplicateListsResult:
+    NotDuplicateList:
+    - Ramon is the new black
+    - Thayane is the new black
+    - Hajime is the new black
+    - Madalena is the new black
+    DuplicateList:
+    - Juujba is the new black
+    - Jujuba is the new black
