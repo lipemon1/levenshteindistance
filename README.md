@@ -3,11 +3,11 @@
 ## What is this about
 In this project, I tried from a list of strings. Separate this list into two new lists. One with the unique strings and the other with the possible copies that exist.
 
-For this use the string comparison method called Levenshtein distance (Wikipedia Link [LINK AQUI]). Also, I created some other variables to help me find possible duplicates with higher quality.
+For this use the string comparison method called Levenshtein distance [Wikipedia Link](https://en.wikipedia.org/wiki/Levenshtein_distance#:~:text=Informally%2C%20the%20Levenshtein%20distance%20between,considered%20this%20distance%20in%201965). Also, I created some other variables to help me find possible duplicates with higher quality.
 
 All the code is in C# inside a Unity project in version 2020.1 but the UnityPackage with the necessary for the project you can use even in versions before this one.
 
-Or, you can download this UnityPackage with the important stuff [LINK PARA O UNITY PACKAGE]
+Or, you can download this UnityPackage with the important stuff [Unity Package String Compare](https://github.com/lipemon1/levenshteindistance/blob/main/Assets/StringsCompare.unitypackage?raw=true)
 
 ## How to use
 You can use the result in 3 ways. Calling through a **ScriptableObject**, importing an **XML file**, or **via script** calling the created method.
