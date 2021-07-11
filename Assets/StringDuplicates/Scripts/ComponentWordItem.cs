@@ -1,14 +1,17 @@
-﻿[System.Serializable]
-public struct ComponentWordItem
+﻿namespace StringDuplicate
 {
-    public string Original;
-    public string Target;
-    public int Distance;
-
-    public ComponentWordItem(string original, string target)
+    [System.Serializable]
+    public struct ComponentWordItem
     {
-        Original = original;
-        Target = target;
-        Distance = original.DamerauLevenshteinDistanceTo(target);
+        public string Original;
+        public string Target;
+        public int Distance;
+
+        public ComponentWordItem(string original, string target)
+        {
+            Original = original;
+            Target = target;
+            Distance = original.DamerauLevenshteinDistanceTo(target);
+        }
     }
 }

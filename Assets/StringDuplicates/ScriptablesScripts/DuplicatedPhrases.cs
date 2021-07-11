@@ -3,183 +3,186 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "String Importer", menuName = "ScriptableObjects/New String Importer", order = 1)]
-public class DuplicatedPhrases : ScriptableObject
+namespace StringDuplicate
 {
-    public List<string> firstList = new List<string>();
-
-    public DuplicateConfiguration Config;
-
-    [Space]
-    public DuplicatesResult DuplicatesResult;
-
-    [Space]
-    public DuplicateListsResults DuplicateListsResult;
-
-    private static DuplicatedPhrases _instance;
-    public static DuplicatedPhrases Instance
+    [CreateAssetMenu(fileName = "String Importer", menuName = "ScriptableObjects/New String Importer", order = 1)]
+    public class DuplicatedPhrases : ScriptableObject
     {
-        get
+        public List<string> firstList = new List<string>();
+
+        public DuplicateConfiguration Config;
+
+        [Space]
+        public DuplicatesResult DuplicatesResult;
+
+        [Space]
+        public DuplicateListsResults DuplicateListsResult;
+
+        private static DuplicatedPhrases _instance;
+        public static DuplicatedPhrases Instance
         {
-            if(_instance == null)
-                _instance = Resources.Load<DuplicatedPhrases>("String Importer");
-
-            return _instance;
-        }
-    }
-
-    [ContextMenu("Compare Now")]
-    [ExecuteInEditMode]
-    public void CompareNow()
-    {
-        if (firstList.Count <= 0) return;
-
-        DuplicatesResult = new DuplicatesResult();
-        DuplicatesResult.GenerateCases(firstList.Distinct().ToList(), Config);
-
-        DuplicateListsResult = SeparateStrings(firstList);
-    }
-
-    public DuplicateListsResults SeparateStrings(List<string> stringToSeparate)
-    {
-        if (stringToSeparate.Count <= 0) return new DuplicateListsResults();
-
-        DuplicatesResult duplicatesResult = new DuplicatesResult();
-        duplicatesResult.GenerateCases(stringToSeparate.Distinct().ToList(), Config);
-
-        List<string> DuplicateList = duplicatesResult.GetPossiblesDuplicates();
-        List<string> NotDuplicateList = stringToSeparate.Distinct().Except(DuplicateList).ToList();
-
-        DuplicateListsResult = new DuplicateListsResults(NotDuplicateList, DuplicateList);
-
-        return DuplicateListsResult;
-    }
-}
-
-[System.Serializable]
-public struct DuplicatesResult
-{
-    public Dictionary<string, List<string>> CasesToCompareDic;
-
-    public List<DuplicatePhraseResult> NotDuplicates;
-    public List<DuplicatePhraseResult> PossibleDuplicates;
-
-    [Space]
-    List<PhraseResult> comparisonsMade;
-
-    public void GenerateCases(List<string> stringsToCompare, DuplicateConfiguration compareConfig)
-    {
-        CasesToCompareDic = new Dictionary<string, List<string>>();
-        comparisonsMade = new List<PhraseResult>();
-
-        NotDuplicates = new List<DuplicatePhraseResult>();
-        PossibleDuplicates = new List<DuplicatePhraseResult>();
-
-        for (int i = 0; i < stringsToCompare.Count; i++)
-        {
-            string curItem = stringsToCompare[i];
-            foreach (string newItemToCompare in GetListWithoutItem(stringsToCompare, curItem))
+            get
             {
-                List<string> listToCompareNow = AddNewCompareCase(curItem, newItemToCompare);
+                if (_instance == null)
+                    _instance = Resources.Load<DuplicatedPhrases>("String Importer");
 
-                if (listToCompareNow.Count <= 1) continue;
-
-                PhraseResult phraseResult = new PhraseResult(curItem, newItemToCompare, compareConfig);
-                comparisonsMade.Add(phraseResult);
-
-                if (!phraseResult.HasDuplicateResult.Result)
-                {
-                    NotDuplicates.Add(new DuplicatePhraseResult()
-                    {
-                        Origin = phraseResult.Original,
-                        Target = phraseResult.Target,
-                        ConfigResult = phraseResult.ConfigResult,
-                        Results = phraseResult.HasDuplicateResult
-                    });
-                }
-                else
-                {
-                    PossibleDuplicates.Add(new DuplicatePhraseResult()
-                    {
-                        Origin = phraseResult.Original,
-                        Target = phraseResult.Target,
-                        ConfigResult = phraseResult.ConfigResult,
-                        Results = phraseResult.HasDuplicateResult
-                    });
-                }
+                return _instance;
             }
         }
 
-        NotDuplicates = NotDuplicates.Distinct().ToList();
-        PossibleDuplicates = PossibleDuplicates.Distinct().ToList();
-    }
-
-    private List<string> GetListWithoutItem(List<string> originalList, string itemToRemove)
-    {
-        List<string> newList = new List<string>();
-        foreach (var item in originalList)
+        [ContextMenu("Compare Now")]
+        [ExecuteInEditMode]
+        public void CompareNow()
         {
-            newList.Add(item);
+            if (firstList.Count <= 0) return;
+
+            DuplicatesResult = new DuplicatesResult();
+            DuplicatesResult.GenerateCases(firstList.Distinct().ToList(), Config);
+
+            DuplicateListsResult = SeparateStrings(firstList);
         }
 
-        newList.Distinct();
-        newList.Remove(itemToRemove);
-        return newList;
+        public DuplicateListsResults SeparateStrings(List<string> stringToSeparate)
+        {
+            if (stringToSeparate.Count <= 0) return new DuplicateListsResults();
+
+            DuplicatesResult duplicatesResult = new DuplicatesResult();
+            duplicatesResult.GenerateCases(stringToSeparate.Distinct().ToList(), Config);
+
+            List<string> DuplicateList = duplicatesResult.GetPossiblesDuplicates();
+            List<string> NotDuplicateList = stringToSeparate.Distinct().Except(DuplicateList).ToList();
+
+            DuplicateListsResult = new DuplicateListsResults(NotDuplicateList, DuplicateList);
+
+            return DuplicateListsResult;
+        }
     }
 
-    private List<string> AddNewCompareCase(string target, string newCase)
+    [System.Serializable]
+    public struct DuplicatesResult
     {
-        string keyValue = GetKeyValue(target, newCase);
+        public Dictionary<string, List<string>> CasesToCompareDic;
 
-        List<string> casesFromThisTarget;
-        if(CasesToCompareDic.TryGetValue(keyValue, out casesFromThisTarget))
+        public List<DuplicatePhraseResult> NotDuplicates;
+        public List<DuplicatePhraseResult> PossibleDuplicates;
+
+        [Space]
+        List<PhraseResult> comparisonsMade;
+
+        public void GenerateCases(List<string> stringsToCompare, DuplicateConfiguration compareConfig)
         {
-            casesFromThisTarget.Add(newCase);
-            CasesToCompareDic.Remove(keyValue);
-            CasesToCompareDic.Add(keyValue, casesFromThisTarget);
+            CasesToCompareDic = new Dictionary<string, List<string>>();
+            comparisonsMade = new List<PhraseResult>();
 
-            return casesFromThisTarget;
+            NotDuplicates = new List<DuplicatePhraseResult>();
+            PossibleDuplicates = new List<DuplicatePhraseResult>();
+
+            for (int i = 0; i < stringsToCompare.Count; i++)
+            {
+                string curItem = stringsToCompare[i];
+                foreach (string newItemToCompare in GetListWithoutItem(stringsToCompare, curItem))
+                {
+                    List<string> listToCompareNow = AddNewCompareCase(curItem, newItemToCompare);
+
+                    if (listToCompareNow.Count <= 1) continue;
+
+                    PhraseResult phraseResult = new PhraseResult(curItem, newItemToCompare, compareConfig);
+                    comparisonsMade.Add(phraseResult);
+
+                    if (!phraseResult.HasDuplicateResult.Result)
+                    {
+                        NotDuplicates.Add(new DuplicatePhraseResult()
+                        {
+                            Origin = phraseResult.Original,
+                            Target = phraseResult.Target,
+                            ConfigResult = phraseResult.ConfigResult,
+                            Results = phraseResult.HasDuplicateResult
+                        });
+                    }
+                    else
+                    {
+                        PossibleDuplicates.Add(new DuplicatePhraseResult()
+                        {
+                            Origin = phraseResult.Original,
+                            Target = phraseResult.Target,
+                            ConfigResult = phraseResult.ConfigResult,
+                            Results = phraseResult.HasDuplicateResult
+                        });
+                    }
+                }
+            }
+
+            NotDuplicates = NotDuplicates.Distinct().ToList();
+            PossibleDuplicates = PossibleDuplicates.Distinct().ToList();
         }
-        else
+
+        private List<string> GetListWithoutItem(List<string> originalList, string itemToRemove)
         {
             List<string> newList = new List<string>();
-            newList.Add(newCase);
-            CasesToCompareDic.Add(keyValue, newList);
+            foreach (var item in originalList)
+            {
+                newList.Add(item);
+            }
 
-            return CasesToCompareDic[keyValue];
+            newList.Distinct();
+            newList.Remove(itemToRemove);
+            return newList;
         }
-    }
 
-    private string GetKeyValue(string target, string newCase)
-    {
-        List<string> keyValueList = new List<string>();
-        keyValueList.Add(target);
-        keyValueList.Add(newCase);
-
-        keyValueList = keyValueList.OrderBy(kv => kv).ToList();
-
-        string keyValue = "";
-
-        foreach (string item in keyValueList)
+        private List<string> AddNewCompareCase(string target, string newCase)
         {
-            keyValue += item;
+            string keyValue = GetKeyValue(target, newCase);
+
+            List<string> casesFromThisTarget;
+            if (CasesToCompareDic.TryGetValue(keyValue, out casesFromThisTarget))
+            {
+                casesFromThisTarget.Add(newCase);
+                CasesToCompareDic.Remove(keyValue);
+                CasesToCompareDic.Add(keyValue, casesFromThisTarget);
+
+                return casesFromThisTarget;
+            }
+            else
+            {
+                List<string> newList = new List<string>();
+                newList.Add(newCase);
+                CasesToCompareDic.Add(keyValue, newList);
+
+                return CasesToCompareDic[keyValue];
+            }
         }
 
-        return keyValue;
-    }
-
-    public List<string> GetPossiblesDuplicates()
-    {
-        List<string> possibleDuplicates = new List<string>();
-        foreach (DuplicatePhraseResult possibleDuplicate in PossibleDuplicates)
+        private string GetKeyValue(string target, string newCase)
         {
-            possibleDuplicates.Add(possibleDuplicate.Origin);
-            possibleDuplicates.Add(possibleDuplicate.Target);
+            List<string> keyValueList = new List<string>();
+            keyValueList.Add(target);
+            keyValueList.Add(newCase);
+
+            keyValueList = keyValueList.OrderBy(kv => kv).ToList();
+
+            string keyValue = "";
+
+            foreach (string item in keyValueList)
+            {
+                keyValue += item;
+            }
+
+            return keyValue;
         }
 
-        possibleDuplicates = possibleDuplicates.Distinct().ToList();
+        public List<string> GetPossiblesDuplicates()
+        {
+            List<string> possibleDuplicates = new List<string>();
+            foreach (DuplicatePhraseResult possibleDuplicate in PossibleDuplicates)
+            {
+                possibleDuplicates.Add(possibleDuplicate.Origin);
+                possibleDuplicates.Add(possibleDuplicate.Target);
+            }
 
-        return possibleDuplicates;
+            possibleDuplicates = possibleDuplicates.Distinct().ToList();
+
+            return possibleDuplicates;
+        }
     }
 }
 
