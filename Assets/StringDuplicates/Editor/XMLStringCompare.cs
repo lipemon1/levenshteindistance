@@ -5,10 +5,10 @@ using System.Xml;
 using UnityEditor;
 using UnityEngine;
 
-public class OpenFilePanelExample : EditorWindow
+public class XMLStringCompare : EditorWindow
 {
     [MenuItem("XML Importer/Import and Export XML")]
-    static void ImportXML()
+    static void ImportAndCompareXML()
     {
         string path = EditorUtility.OpenFilePanel("Select your xml file", "", "xml");
         if (path.Length != 0)
@@ -27,9 +27,7 @@ public class OpenFilePanelExample : EditorWindow
                 SaveNewXMLList(duplicateListsResults);
             }
             else
-            {
                 Debug.LogError("No string found on this XML");
-            }
         }
     }
 
